@@ -2,5 +2,94 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
+body{
+    width: 100%;
+    height: 100vh;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 8%;
+    background-color:#0D1B2A;
+    width: 100%;
+    color:#FFFFFF;
+}
+
+header .header-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:15%;
+    gap: 0.5rem;
+}
+
+header .header-logo .header-logo_icon{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    width:15%;
+    height: 1.75rem;
+    background-color: #FF6B35;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+
+header .header-logo .header-logo_name{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+header .header-logo .header-logo_name span{
+    color:#FF6B35;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+header nav .nav_list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+header nav .nav_list .nav-item{
+    list-style: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all ease 0.3s;
+}
+
+header nav .nav_list .nav-item:hover{
+   color: #F25522;
+}
+
+header nav .header-btn-CTA{
+    padding: 0.75rem 1.75rem ;
+    background-color:#FF6B35;
+    border-radius: 8px;
+    transition: all ease 0.3s;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+header nav .header-btn-CTA:hover{
+    background-color:#F25522;
+}
