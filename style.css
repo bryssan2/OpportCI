@@ -11,14 +11,20 @@ body{
     font-family:Arial, Helvetica, sans-serif;
 }
 
+
+
+/* Header*/
+
 header{
+    position: sticky;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 8%;
-    background-color:#0D1B2A;
+    padding: 18px 8%;
+    background-color:#07111C;
     width: 100%;
     color:#FFFFFF;
+    z-index: 999;
 }
 
 header .header-logo{
@@ -35,7 +41,7 @@ header .header-logo .header-logo_icon{
    justify-content: center;
     width:15%;
     height: 1.75rem;
-    background-color: #FF6B35;
+    background-color: #F25522;
     border-top-left-radius: 20%;
     border-bottom-right-radius: 20%;
 }
@@ -69,8 +75,9 @@ header nav .nav_list .nav-item{
     list-style: none;
     font-weight: 600;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 0.8rem;
     transition: all ease 0.3s;
+    text-transform: uppercase;
 }
 
 header nav .nav_list .nav-item:hover{
@@ -79,7 +86,7 @@ header nav .nav_list .nav-item:hover{
 
 header nav .header-btn-CTA{
     padding: 0.75rem 1.75rem ;
-    background-color:#FF6B35;
+    background-color:#F25522;
     border-radius: 8px;
     transition: all ease 0.3s;
     border: none;
@@ -91,5 +98,253 @@ header nav .header-btn-CTA{
 }
 
 header nav .header-btn-CTA:hover{
+    background-color:#FF6B35;
+}
+
+
+
+/* Hero section */
+
+.hero-section{
+    width: 100%;
+    height: 80%;
+    background:#07111c;
+    background: linear-gradient(
+        145deg,
+        #07111C 30%,
+        #0D1B2A 70%,
+        #132747 100%
+    );
+    padding-bottom: 50px;
+}
+
+.hero-section .section-content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8%;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+}
+
+.hero-section .section-content .hero-title{
+    font-size: 4rem;
+   color: #FFFFFF;
+   font-weight: 600;
+   width: 40%;
+   text-align:center;
+   line-height: 4rem;
+   text-wrap: balance;
+}
+
+.hero-section .section-content .hero-title span{
+    color: #F25522;
+}
+
+.hero-section .section-content .hero-description{
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    text-align: center;
+    width: 30%;
+     line-height: 2rem;
+     text-wrap: balance;
+}
+
+.hero-section p{
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.hero-section p i{
+    color:#F25522;
+    font-size: 20px;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40%;
+}
+
+.inputs{
+  width: 50%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3%;
+}
+
+.inputs .input-box{
+    position: relative;
+    width: 30%;
+    height: 40px;
+}
+
+.inputs .input-box input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius:6px;
+    box-shadow: 0 10px 30px rgba(13, 27, 42, 0.08);
+    padding-left: 40px;
+    padding-right: 6px;
+    font-size: 0.8rem;
+}
+
+.inputs .input-box input::placeholder{
+    color:#6B7280;
+    font-size: 0.8rem;
+}
+
+.inputs .input-box  i{
+    position: absolute;
+    z-index: 100;
+ position: absolute;
+   color:#6B7280;
+  width: 15%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-btn-cta{
+    padding: 15px 15px;
     background-color:#F25522;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.hero-btn-cta:hover{
+    background-color: #FF6B35;
+}
+
+:root {
+
+  /* =========================
+     COLORS
+  ========================== */
+
+  --color-primary: #0D1B2A;
+  --color-primary-dark: #07111C;
+
+  --color-accent: #FF6B35;
+  --color-accent-hover: #F25522;
+
+  --color-background: #F7F7F7;
+  --color-surface: #FFFFFF;
+
+  --color-text: #1A1A2E;
+  --color-text-secondary: #6B7280;
+
+  --color-white: #FFFFFF;
+
+  --color-border: #E5E7EB;
+
+  --color-overlay-blue: rgba(80, 120, 255, 0.12);
+  --color-overlay-orange: rgba(255, 107, 53, 0.18);
+
+  --color-shadow: rgba(13, 27, 42, 0.08);
+
+
+
+  /* =========================
+     TYPOGRAPHY
+  ========================== */
+
+  --font-heading: 'Satoshi', 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-md: 1.125rem;
+  --font-size-lg: 1.5rem;
+  --font-size-xl: 2.5rem;
+  --font-size-hero: 4.5rem;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 800;
+
+  --line-height-body: 1.7;
+  --line-height-heading: 1.1;
+
+
+
+  /* =========================
+     SPACING
+  ========================== */
+
+  --spacing-unit: 8px;
+
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 3rem;
+  --space-6: 4rem;
+  --space-7: 6rem;
+  --space-8: 8rem;
+
+
+
+  /* =========================
+     BORDER RADIUS
+  ========================== */
+
+  --border-radius-sm: 10px;
+  --border-radius-md: 16px;
+  --border-radius-lg: 24px;
+  --border-radius-xl: 32px;
+  --border-radius-pill: 999px;
+
+  --border-radius: 16px;
+
+
+
+  /* =========================
+     SHADOWS
+  ========================== */
+
+  --shadow-sm:
+    0 4px 12px rgba(0,0,0,0.04);
+
+  --shadow-md:
+    0 10px 30px rgba(13, 27, 42, 0.08);
+
+  --shadow-lg:
+    0 20px 60px rgba(13, 27, 42, 0.12);
+
+
+
+  /* =========================
+     CONTAINER
+  ========================== */
+
+  --container-width: 1200px;
+  --container-padding: 24px;
+
+
+
+  
+
 }
