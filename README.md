@@ -9,6 +9,8 @@ Chaque semaine, les abonnés reçoivent :
 - 1 conseil CV & entretien
 - 1 parcours d'étudiant inspirant
 
+  Lien du site : https://opportci.netlify.app/
+
 ## Fonctionnalités du site
 - Formulaire de capture d'email (hero + section CTA)
 - Animations au scroll sur toutes les sections
