@@ -1,3 +1,70 @@
+/* Animation sections title*/
+.sections-title-hidden{
+    opacity:0;
+    transform: translateY(40px);
+}
+
+.sections-title-show{
+    opacity:1;
+    transform: translateY(0px);
+}
+
+/* Animation for hero section */
+.hero-content-hidden{
+    opacity:0;
+    transform: translateY(70px);
+}
+
+.hero-content-show{
+    opacity:1;
+    transform: translateY(0px);
+}
+
+/* Animation for benefits section */
+.benefit-item-hidden{
+    opacity:0;
+    transform: translateY(40px);
+}
+
+.benefit-item-show{
+    opacity:1;
+    transform: translateY(0px);
+}
+
+/* Animation for testimonial cards*/
+.card-hidden{
+    opacity:0;
+    transform: translateY(30px);
+}
+
+.card-show{
+    opacity:1;
+    transform: translateY(0px);
+}
+
+/* Animation for about section*/
+.paragraphs-hidden{
+    opacity:0;
+    transform: translatex(-50px);
+}
+
+.paragraphs-show{
+     opacity:1;
+    transform: translatex(0px);
+}
+
+.stats-hidden{
+    opacity:0;
+    transform: translatex(50px);
+}
+
+.stats-show{
+     opacity:1;
+    transform: translatex(0px);
+}
+
+
+
 *{
     padding: 0;
     margin: 0;
@@ -29,6 +96,7 @@ body{
     font-weight: 600;
     margin-bottom: 70px;
     text-transform: uppercase;
+    transition: all ease 1s;
 }
 
 .benefits-section .section-content .benefits-section-title::after,.about-section .section-content .about-section-title::after,.about-section .about-section-title::after{
@@ -85,7 +153,7 @@ header .header-logo .header-logo_icon{
 }
 
 header .header-logo .header-logo_icon{
-    font-size: 80%;
+    font-size: 100%;
     color: #07111C;
 }
 
@@ -177,10 +245,12 @@ header nav .header-btn-CTA:hover{
     font-size: 4rem;
    color: #FFFFFF;
    font-weight: 600;
-   width: 40%;
+   width: 80%;
    text-align:center;
    line-height: 4rem;
    text-wrap: balance;
+   transition: all ease 1s;
+   transition-delay: 0.2s;
 }
 
 .hero-section .section-content .hero-title span{
@@ -194,6 +264,8 @@ header nav .header-btn-CTA:hover{
     width: 30%;
      line-height: 2rem;
      text-wrap: balance;
+     transition: all ease 1s;
+     transition-delay: 0.3s;
 }
 
 .hero-section p{
@@ -201,6 +273,8 @@ header nav .header-btn-CTA:hover{
   font-size: 1.1rem;
   margin-top: 15px;
   margin-right: 10px;
+  transition: all ease 1s;
+  transition-delay: 0.5s;
 }
 
 .hero-section p i{
@@ -215,6 +289,8 @@ form{
     justify-content: center;
     flex-direction: column;
     gap: 40%;
+    transition: all ease 1s;
+    transition-delay: 0.4s;
 }
 
 .inputs{
@@ -258,6 +334,7 @@ form{
    color:#6B7280;
   width: 15%;
   height: 100%;
+  font-size: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -302,6 +379,7 @@ form{
     justify-content: center;
     flex-direction: column;
     gap:15px;
+    transition: all ease 1s;
 }
 
 .section-content .benefits-list .benefit-item i{
@@ -351,6 +429,7 @@ form{
     box-shadow:0 0 60px rgba(13, 27, 42, 0.12);
     padding: 25px 30px;
     border-radius: 12px;
+    transition: all ease 1s;
 }
 
 .testimonials-section .section-content .card .img{
@@ -427,6 +506,7 @@ object-fit:cover;
     align-items: start;
     flex-direction: column;
     gap: 20px;
+    transition: all ease 1s;
 }
 .about-section .section-content .paragraphs::before{
   position: absolute;
@@ -469,6 +549,7 @@ object-fit:cover;
     box-shadow: 0 0px 60px rgba(13, 27, 42, 0.12);
     border-radius: 10px;
     flex-direction: column;
+    transition: all ease 1s;
 }
 
 
@@ -636,8 +717,10 @@ footer .connection p{
     justify-content: center;
     border: 1px solid #FFFFFF;
     border-radius:50%;
-    width: 30px;
+    width: 35px;
     aspect-ratio: 1;
+    cursor: pointer;
+
 }
 
 .footer-navigation,.footer-ressource{
@@ -663,134 +746,4 @@ footer .connection p{
     list-style: none;
     cursor: pointer;
     text-transform: capitalize;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-:root {
-
-  /* =========================
-     COLORS
-  ========================== */
-
-  --color-primary: #0D1B2A;
-  --color-primary-dark: #07111C;
-
-  --color-accent: #FF6B35;
-  --color-accent-hover: #F25522;
-
-  --color-background: #F7F7F7;
-  --color-surface: #FFFFFF;
-
-  --color-text: #1A1A2E;
-  --color-text-secondary: #6B7280;
-
-  --color-white: #FFFFFF;
-
-  --color-border: #E5E7EB;
-
-  --color-overlay-blue: rgba(80, 120, 255, 0.12);
-  --color-overlay-orange: rgba(255, 107, 53, 0.18);
-
-  --color-shadow: rgba(13, 27, 42, 0.08);
-
-
-
-  /* =========================
-     TYPOGRAPHY
-  ========================== */
-
-  --font-heading: 'Satoshi', 'Inter', sans-serif;
-  --font-body: 'Inter', sans-serif;
-
-  --font-size-xs: 0.75rem;
-  --font-size-sm: 0.875rem;
-  --font-size-base: 1rem;
-  --font-size-md: 1.125rem;
-  --font-size-lg: 1.5rem;
-  --font-size-xl: 2.5rem;
-  --font-size-hero: 4.5rem;
-
-  --font-weight-regular: 400;
-  --font-weight-medium: 500;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
-  --font-weight-black: 800;
-
-  --line-height-body: 1.7;
-  --line-height-heading: 1.1;
-
-
-
-  /* =========================
-     SPACING
-  ========================== */
-
-  --spacing-unit: 8px;
-
-  --space-1: 0.5rem;
-  --space-2: 1rem;
-  --space-3: 1.5rem;
-  --space-4: 2rem;
-  --space-5: 3rem;
-  --space-6: 4rem;
-  --space-7: 6rem;
-  --space-8: 8rem;
-
-
-
-  /* =========================
-     BORDER RADIUS
-  ========================== */
-
-  --border-radius-sm: 10px;
-  --border-radius-md: 16px;
-  --border-radius-lg: 24px;
-  --border-radius-xl: 32px;
-  --border-radius-pill: 999px;
-
-  --border-radius: 16px;
-
-
-
-  /* =========================
-     SHADOWS
-  ========================== */
-
-  --shadow-sm:
-    0 4px 12px rgba(0,0,0,0.04);
-
-  --shadow-md:
-    0 10px 30px rgba(13, 27, 42, 0.08);
-
-  --shadow-lg:
-    0 20px 60px rgba(13, 27, 42, 0.12);
-
-
-
-  /* =========================
-     CONTAINER
-  ========================== */
-
-  --container-width: 1200px;
-  --container-padding: 24px;
-
-
-
-  
-
 }
