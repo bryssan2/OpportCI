@@ -86,6 +86,7 @@ header .header-logo .header-logo_icon{
 
 header .header-logo .header-logo_icon{
     font-size: 80%;
+    color: #07111C;
 }
 
 header .header-logo .header-logo_name{
@@ -512,6 +513,172 @@ object-fit:cover;
     font-size: 0.9rem;
     text-transform: capitalize;
 }
+
+/* CTA section*/
+
+
+.CTA-section{
+     width: 100%;
+    height: fit-content;
+     padding:50px 40px;
+  background-color:#07111C;
+  border-bottom: 1px solid #6B7280;
+    
+}
+
+.CTA-section .section-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.CTA-section .section-content .title{
+    color: #FFFFFF;
+    font-weight: 600;
+    width: 25%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.CTA-section .section-content .title span{
+    color: #F25522;
+}
+
+.CTA-section .section-content form{
+    gap: 2rem;
+}
+
+.CTA-section .section-content p{
+    color: #FFFFFF;
+}
+
+.CTA-section .section-content p i{
+    color: #F25522;
+    font-size: 1rem;
+    margin-right: 8px;
+}
+
+/* footer*/ 
+
+footer{
+    width: 100%;
+    height: fit-content;
+     padding:40px 40px;
+  background-color:#07111C;
+   color: #FFFFFF;
+}
+
+
+footer .section-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.connection .footer-logo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:30%;
+    margin-bottom:10px;
+}
+
+
+.connection .footer-logo i{
+    font-size:80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:20px;
+    aspect-ratio: 1;
+    background-color: #F25522;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    color: #07111C;
+}
+
+.connection .footer-logo .footer-logo_name{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.connection .footer-logo .footer-logo_name span{
+    color:#FF6B35;
+}
+
+footer .connection p{
+    width: 50%;
+    margin-bottom: 10px;
+    line-height: 1.7rem;
+}
+
+.social-media-icon ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 20%;
+}
+
+.social-media-icon ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #FFFFFF;
+    border-radius:50%;
+    width: 30px;
+    aspect-ratio: 1;
+}
+
+.footer-navigation,.footer-ressource{
+    display: flex;
+    align-items:start;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.footer-navigation .title,.footer-ressource .title{
+    font-weight: 600;
+}
+
+.footer-navigation ul,.footer-ressource ul{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-navigation ul li,.footer-ressource ul li{
+    list-style: none;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 :root {
