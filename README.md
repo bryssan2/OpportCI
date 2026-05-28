@@ -14,7 +14,7 @@ Chaque semaine, les abonnés reçoivent :
 ## Fonctionnalités du site
 - Formulaire de capture d'email (hero + section CTA)
 - Animations au scroll sur toutes les sections
-- Section témoignages et statistiques
+- Section témoignages
 - Design responsive mobile / desktop
 - Navigation fluide entre les sections
 
@@ -24,6 +24,7 @@ Chaque semaine, les abonnés reçoivent :
 - JavaScript (Vanilla) — animations Intersection Observer
 - FontAwesome 6
 - Google Fonts (Inter, Roboto)
+- MailChimp 
 
 ## Ce que j'ai appris
 - Conception d'une page orientée conversion (copywriting, CTA, 
@@ -32,3 +33,4 @@ Chaque semaine, les abonnés reçoivent :
   Intersection Observer
 - Structure d'une landing page de génération de leads
 - Application des principes marketing (AIDA) dans la conception web
+- Intégration d'un service Marketing  Email 
