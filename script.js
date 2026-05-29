@@ -21,3 +21,34 @@ function createObserver(selector, classToAdd, options = { root: null, threshold:
     createObserver('.card', 'card-show');
     createObserver('.paragraphs', 'paragraphs-show');
     createObserver('.stats-hidden', 'stats-show');
+
+
+let form = document.querySelectorAll('#form');
+let submitButton = document.querySelectorAll('#submit-btn');
+
+let isSubmitting = false;
+    
+form.forEach(formElement => {
+  formElement.addEventListener('submit', function(e) {
+    if (isSubmitting) {
+      e.preventDefault();
+      return;
+    }
+  isSubmitting = true;
+  submitButton.forEach(btn => {
+    btn.disabled = isSubmitting;
+    btn.innerText = 'Envoi en cours...';
+  })
+  setTimeout(() => {
+    form.forEach(formElement => {
+      formElement.reset();
+    });
+    isSubmitting = false;
+    submitButton.forEach(btn => {
+      btn.disabled = isSubmitting;
+      btn.innerText = 'je veux mon stage';
+    });
+  },5000)
+
+})
+})
